@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Side Bar -->
+    <div class="sideBar">
+        <span class="circle"></span>
+        <h1>Brandon Hornick</h1>
+        <h3>bhornick09@gmail.com</h3>
+        <h4>Aspiring Software Engineer.</h4>
+        <h4>(Give me some experience to add to this site please.)</h4>
+    </div>
+
+         
+    <!-- Top navigation -->
+    <ul>
+        <li class="nav"><a onclick="changeTheme()">Change Theme</a></li>
+        <li class="nav"><a onClick="document.getElementById('projects').scrollIntoView();">Projects</a></li>
+        <li class="nav"><a onClick="document.getElementById('education').scrollIntoView();">Education</a></li>
+        <li class="nav"><a onClick="document.getElementById('experience').scrollIntoView();">Experience</a></li>
+        <li class="nav"><a onClick="document.getElementById('blackjack').scrollIntoView();">Black Jack</a></li>
+    </ul>
+
+    <!-- Main -->
+    <div class="main">
+        <h1>Hey there!</h1>
+        <h2>Scroll down to see some things about me!</h2>
+    </div>
+
+    <!-- Body -->
+    <div class="body" style="background-color: rgb(24, 24, 24)">
+        <h2>BUT FIRST LET'S PLAY SOME BLACKJACK!</h2>
+        <a onClick="document.getElementById('blackjack').scrollIntoView();"> PLAY! </a>
+    </div>
+
+    <!-- Card Game -->
+    <div class="cardGame" id="blackjack">
+            <!-- Dealer -->
+            <section class="column" id="dealerSection">
+                <Text> Dealer </Text>
+                <a id="dealerTotal"> </a>
+                <card id="revealCard"></card>
+                <card id="dealerCard" onClick="randomCard()"> </card>
+            </section>
+
+            <!-- Middle Functions -->
+            <section class="column">
+                <h2> BLACK JACK </h2>
+                <a onClick="randomCard()" id="draw"> Draw! </a>
+                <a onClick="hitCard()" id="hit"> </a>
+                <a onClick="standCard()" id="stand"> </a>
+                <h1 id="result" style="text-align: center;"> </h1>
+                <h3 id="result2" style="text-align: center;"> </h3>
+            </section>
+
+            <!-- User -->
+            <section class="column" id="userSection">
+                <Text> You </Text>
+                <a id="total"> </a>
+                <card id="userCard"> </card>
+                <card id="userCard2" onClick="randomCard()"> </card>
+            </section>
+    </div>
+
+    <!--Education-->
+    <div class="body" id="education" style="background-color: rgb(24, 24, 24)">
+        <h1>Education</h1>
+        <!-- Box One SNHU-->
+        <section class="section">
+            <section class="inner">
+                <h2> Southern New Hampshire University </h2>
+                <h3> Expected Graduate 2026 </h3>
+                <h3>  Online Courses </h3>
+            </section>
+            <section>
+                <h4>Currently Pursuing a Computer Science degree with a
+                    Software Engineering focus. 4.0 GPA with the determination to maintain it.
+                </h4>
+                <li> President’s List Fall 2023 </li>
+                <li> Foundation in Application Development </li>
+                <li> Introduction to Scripting </li>
+            </section>
+        </section>
+
+        <!-- Box Two WVU -->
+        <section class="section">
+            <section class="inner">
+                <h2> West Virginia University </h2>
+                <h3> 2022-2023 </h3>
+                <h3> Morgantown, WV </h3>
+            </section>
+            <section>
+                <h4> Computer Engineering </h4>
+                <li> 3.4 GPA </li>
+            </section>
+        </section>
+    </div>
+
+    <!--Experience-->
+    <div class="body" id="experience" style="background-color: rgb(24, 24, 24)">
+        <h1>Experience</h1>
+        <!-- Box One TL -->
+        <section class="section">
+            <section class="inner">
+                <h2> Meat and Produce Team Lead (Walmart)  </h2>
+                <h3> May 2023 - 2024 </h3>
+                <h3> Buckhannon, WV </h3>
+            </section>
+            <section>
+                <li>Effectively managing and leading a team ensuring smooth daily operations,
+                    as well as assisting the entirety of the store's operations.</li>
+                <li>Used strategic merchandising plans for a constant increase in sales.</li>
+                <li>Demonstrate dedication by holding  this position while being a full time
+                    college student through an online program at Southern New Hampshire University.</li>
+            </section>
+        </section>
+
+        <!-- Box Two Seasonal -->
+        <section class="section">
+            <section class="inner">
+                <h2> Seasonal Associate (Walmart) </h2>
+                <h3> March 2021 - May 2023 </h3>
+                <h3> Buckhannon, WV </h3>
+            </section>
+            <section>
+                <li>Successfully assisting multiple areas of the store, including General Merchandise, 
+                    customer service, stocking, cart attending, online grocery,  cashier, etc.</li>
+                <li> Received recognition for outstanding performance, including "Employee of the Month" 
+                    and “General Merchandise Champion” during my time in the seasonal area.</li>
+                <li>Demonstrated flexibility by adapting to an ever-changing area, going
+                    from holiday to holiday in the span of weeks.</li>
+            </section>
+        </section>
+    </div>
+
+    <!--Projects-->
+    <div class="body" id="projects" style="background-color: rgb(24, 24, 24)">
+        <h1>Projects</h1>
+        <!-- Box One Grocery Track-->
+        <section class="section">
+            <section class="inner">
+                <a href="https://github.com/bhornick09/Project-Three-Grocery-Tracker"target="_blank" class="github"> 
+                    <h2> Grocery Tracker </h2> 
+                </a>
+                <h3> IT 140 Project </h3>
+                <h3> C++ </h3>
+            </section>
+            <section>
+                <h4>This program was made for a hypothetical grocery store that analyzes records of purchased
+                    items, allows a user to interact with this data such as individual item frequency,
+                    overall item frequency, frequency displayed as a histogram, as well as an output 
+                    data file creation. This project was used to help this hypothetical Grocery Store 
+                    understand their sales and allow for easy interaction with their data.</h4>
+            </section>
+        </section>
+
+        <!-- Box Two PDF to Book -->
+        <section class="section">
+            <section class="inner">
+                <a href="https://github.com/bhornick09/Project-Three-Grocery-Tracker"target="_blank" class="github"> 
+                    <h2> PDF to Book IOS App </h2> 
+                </a>
+                <h3> Mobile Application </h3>
+                <h3> Swift </h3>
+            </section>
+            <section>
+                <h4>Allows user to submit PDF and converts to book form, allowing for placeholding and a more conventional feel.</h4>
+            </section>
+        </section>
+    </div>
+    
+</body>
+</html>
+
+<script src="gameLogic.js"> </script>
