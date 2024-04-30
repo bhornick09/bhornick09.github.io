@@ -180,6 +180,8 @@ function hitCard(){
         hit.innerHTML = "";
         gameResult.innerHTML = "You busted,";
         gameResult2.innerHTML = "You Lose!";
+        standCard();
+        
     }
 }
 
@@ -259,10 +261,11 @@ function standCard(){
     }
 
     revealCard.innerHTML = cardStyle;
-
     dealerTotal += randomNumber
     dealerTotalText.innerHTML = "Total: " + dealerTotal;
-    setTimeout(gameOver, 1000);
+    if(userTotal < 22){
+        setTimeout(gameOver, 1000);
+    }
 }
 
 function gameOver(){

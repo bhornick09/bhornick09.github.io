@@ -112,12 +112,13 @@ card {
     z-index: 50;
     left: 0;
     top: 0;
-    background-color: rgb(24, 24, 24);
+    background-image: linear-gradient( rgb(24, 24, 24), rgb(24, 24, 24), var(--main-color));
     overflow-x: hidden; /* disable horizontal scroll */
     padding: 30px;
     animation: animate 1s linear;
     border-right: 1px solid var(--main-color); 
     box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.3);
+    text-shadow: 2px 2px 5px black;
 }
 .circle {
     width: 200px;
@@ -132,6 +133,10 @@ card {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     animation: fade-in 2s linear;
+}
+#themeButton{
+    animation: themeGlow 3s linear;
+    animation-iteration-count: 2;
 }
 div {
     scroll-snap-align: start;
@@ -210,7 +215,7 @@ div {
     border-color: var(--main-color);
     border-style: solid;
     margin: 10px;
-    padding: 30px;
+    padding: 20px;
     box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.5);
 }
 .inner {
@@ -263,5 +268,22 @@ div {
     100%{
         margin-left:20%;
         opacity: 1;
+    }
+}
+@keyframes themeGlow{
+    0%{
+        background-color: black;
+    }
+    25%{
+        background-color: var(--main-color);
+    }
+    50%{
+        background-color: black;
+    }
+    75%{
+        background-color: var(--main-color);
+    }
+    100%{
+        background-color: black;
     }
 }
