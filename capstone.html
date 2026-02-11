@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Capstone</title>
 </head>
 
 <body>
@@ -16,14 +16,13 @@
     <header class="site-header">
         <nav class="top-nav">
             <ul>
-                <li class="nav"><a onclick="changeTheme()" id="themeButton">Change Theme</a></li>
                 <li><a href="./index.html">Home</a></li>
             </ul>
         </nav>
 
         <div class="hero-card">
             <div class="hero-image">
-                <img src="./capstone.png" alt="Brandon Hornick">
+                <img src="./assets/capstone.png" alt="Brandon Hornick">
             </div>
             <div class="hero-content">
                 <h1>CS499 CAPSTONE</h1>
@@ -34,6 +33,59 @@
             </div>
         </div>
     </header>
+
+    <!--Professional Self-Assessment-->
+    <div id="capstone">
+        <h1>Professional</h1>
+        <h2>Self-Assessment</h2>
+        <div class="project-card section assessment-card">
+            <section class="assessment-intro">
+                <h2 style="text-align: left; font-size: 18px; margin-bottom: 20px; color: #e6eef5;">Overview</h2>
+                <p style="color: #e6eef5; line-height: 1.8; margin-bottom: 30px;">
+                    Placeholder text for your professional journey and how this ePortfolio demonstrates your growth and readiness in computer science.
+                </p>
+            </section>
+
+            <section class="assessment-topics">
+                <div class="assessment-item">
+                    <h3>Program Growth & Professional Goals</h3>
+                    <p>Placeholder: Discuss how your coursework shaped your professional trajectory and prepared you for the industry...</p>
+                </div>
+
+                <div class="assessment-item">
+                    <h3>Collaboration in Team Environments</h3>
+                    <p>Placeholder: Share experiences working with others, agile practices, and communication within development teams...</p>
+                </div>
+
+                <div class="assessment-item">
+                    <h3>Communication with Stakeholders</h3>
+                    <p>Placeholder: Describe how you bridge technical and non-technical teams, presenting complex ideas clearly...</p>
+                </div>
+
+                <div class="assessment-item">
+                    <h3>Data Structures & Algorithms</h3>
+                    <p>Placeholder: Highlight your understanding of foundational CS concepts and their applications in real-world problems...</p>
+                </div>
+
+                <div class="assessment-item">
+                    <h3>Software Engineering & Database Design</h3>
+                    <p>Placeholder: Demonstrate your full-stack capabilities and approach to scalable, maintainable system design...</p>
+                </div>
+
+                <div class="assessment-item">
+                    <h3>Security & Best Practices</h3>
+                    <p>Placeholder: Explain your commitment to secure coding, data protection, and industry-standard security practices...</p>
+                </div>
+            </section>
+
+            <section class="assessment-artifacts" style="margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+                <h2 style="text-align: left; font-size: 18px; margin-bottom: 15px; color: #e6eef5;">How It All Connects</h2>
+                <p style="color: #e6eef5; line-height: 1.8;">
+                    Placeholder: Summarize how the artifacts below showcase these competencies together and demonstrate the full scope of your technical abilities...
+                </p>
+            </section>
+        </div>
+    </div>
 
     <!--Code Review-->
     <div id="capstone">
@@ -56,15 +108,16 @@
             target="_blank">
             <section class="innerCap">
                 <div class="enhancement-description">
-                    <h3>Refactor: Redesigned UI and weight entry flow</h3>
-                    <p>Added image component to weight entries, changed date entry from manual to calendar widget, and added a scrollable date list to access historial weight entries.</p>
+                    <h3>Complete UI redesign and improved app flow</h3>
+                    <p>Implemented a new theme, focusing on a modern gray and purple color scheme. Made app usage feel more obvious to the end user, creating a smoother experience.
+                        The weight journal entry process was redesigned with a new image option, a change in the way dates are entered (going from from manual to calendar widget), and added a scrollable date list to access historial weight entries.</p>
                 </div>
             </section>
 
             <section>
                 <div class="before-after">
                     <figure class="before">
-                        <img src="./SDbefore.png" alt="Before screenshot">
+                        <img src="./assets/SDbefore.png" alt="Before screenshot">
                         <figcaption>Before</figcaption>
                     </figure>
 
@@ -76,7 +129,7 @@
                     </div>
 
                     <figure class="after">
-                        <img src="./SDafter.png" alt="After screenshot">
+                        <img src="./assets/SDafter.png" alt="After screenshot">
                         <figcaption>After</figcaption>
                     </figure>
                 </div>
@@ -91,35 +144,47 @@
             target="_blank">
             <section class="innerCap">
                 <div class="enhancement-description">
-                    <h2>Refactor: Improved Weight Entry UI</h2>
-                    <p>Updated the weight entry flow to improve clarity and reduce errors. Below shows the view before and after the enhancement.</p>
+                    <h3>Implemented weight entry analysis with a newly added dashboard</h3>
+                    <p>Created a new dashboard page with an algorithm to analyze weight trends and display them in a visually appealing way. 
+                        The chart uses a Min/Max algorithm to determine the X and Y axis ranges. The chart is created through drawing functionality in Java, 
+                        drawing a point at each weight entry, and drawing lines between each point.
+                        Also created a goal widget, analyzing the user's current weight versus their end goal and color coordinating results based on current progress. </p>
                 </div>
             </section>
 
             <section>
                 <div class="before-after">
                     <figure class="before">
-                        <img src="./DSAafter.png" alt="Before screenshot">
+                        <img src="./assets/DSAafter.png" alt="Before screenshot">
                         <figcaption>Before</figcaption>
                     </figure>
                 </div>
             </section>
         </a>
     </div>
-        <!--Three-->
+
+        <!--Enhancement Three: Databases-->
     <div id="capstone">
-        <h1>Enhancement Three: Databases (In progress)</h1>
-        <a class="project-card section" href="./capstone.html"
+        <h1>Enhancement Three</h1>
+        <h2>Databases</h2>
+        <a class="project-card section enhancement-card" href="./capstone.html"
             target="_blank">
             <section class="innerCap">
-                <img src="./capstone.png" alt="Capstone Logo" width="150" height="150">
-                <section class="innerCapVert">
-                    <h2>Capstone</h2>
-                    <p>Weight Journal - Android Studio, Java, SQL, XML</p>
-                </section>
-                
+                <div class="enhancement-description">
+                    <h3>Database restructuring and security improvements</h3>
+                    <p>Restructured the database schema to improve performance and maintainability. 
+                        Implemented security best practices including input sanitization and secure database connection handling. 
+                        Passwords now handled with encryption, images are stored as URIs in the database to improve performance, and app formats input to ensure database entries are consistent.</p>
+                </div>
             </section>
+
             <section>
+                <div class="before-after">
+                    <figure class="before">
+                        <img src="./assets/DSAafter.png" alt="Before screenshot">
+                        <figcaption>Before</figcaption>
+                    </figure>
+                </div>
             </section>
         </a>
     </div>
