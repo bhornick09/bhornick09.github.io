@@ -17,7 +17,6 @@
         <nav class="top-nav">
             <ul>
                 <li class="nav"><a onclick="changeTheme()" id="themeButton">Change Theme</a></li>
-                <li><a href="./capstone.html">Capstone</a></li>
                 <li class="nav"><a onClick="document.getElementById('education').scrollIntoView();">Education</a></li>
                 <li class="nav"><a onClick="document.getElementById('projects').scrollIntoView();">Projects</a></li>
                 <li class="nav"><a onClick="document.getElementById('experience').scrollIntoView();">Experience</a></li>
@@ -45,8 +44,7 @@
     <div id="capstone">
         <h1>Southern New Hampshire University</h1>
         <h2>Capstone</h2>
-        <a class="project-card section" href="./capstone.html"
-            target="_blank">
+        <a class="project-card section" href="./capstone.html">
             <section class="innerCap" style="justify-content: flex-start;">
                 <img src="./assets/capstone.png" alt="Capstone Logo" width="150" height="150">
                 <section class="innerCapVert">
@@ -64,7 +62,7 @@
     <div class="body" id="education">
         <h1>Education</h1>
         <!-- Box One SNHU-->
-         <a class="project-card section" href="" target="_blank">
+         <a class="project-card section" href="https://www.linkedin.com/posts/brandon-hornick-309343256_being-a-first-generation-college-student-share-7446254117888524289-lyJK/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8N3fkBvHqBlWCNW5YA8j5z7WDo0LPvghE" target="_blank">
             <section class="inner">
                 <h3> Southern New Hampshire University </h3>
                 <h3> 2026 Graduate </h3>
@@ -105,15 +103,16 @@
         <!-- Mod Menu-->
         <a class="project-card section" href="https://github.com/bhornick09/TCG-Card-Shop-Simulator-Mod-Menu" target="_blank">
             <section class="inner">
-                <h3> TCG Card Shop Simulator Mod Menu </h3>
-                <h3> Personal Project </h3>
-                <h3> Bepinex, Harmony, .NET, C# </h3>
+                <h3> Containerized Youtube Downloader </h3>
+                <h3> DevOps CI/CD Pipeline </h3>
+                <h3> Python, Docker, GitHub Actions, Pytest, Selenium </h3>
             </section>
             <section>
                 <p>
-                    Built a Mod Menu using Bepinex (plugin framework for Unity games) and Harmony (runtime patching framework)
-                    demonstrating runtime patching and hooking. Developed features to manipulate in game currency,
-                    spawn objects, override pack odds, and make all shop items free.
+                    Developed and containerized a Python based command line application that processes user inputs to download YouTube videos, isolating all dependencies within Docker to guarantee the app works across all machines.
+                    Engineered an automated CI/CD pipeline via GitHub Actions that triggers on every code commit to run syntax linting, verify application builds, and enforce code quality.
+                    Implemented automated backend testing using Pytest integrated into the deployment pipeline to validate core downloader functionality and API endpoint integrity.
+
                 </p>
             </section>
         </a>
@@ -134,7 +133,7 @@ Structure and Algorithm components like the Min/Max algorithm and using ArrayLis
         </a>
         
         <!-- Box Three Gym Sim-->
-        <a class="project-card section" href="https://www.linkedin.com/posts/brandon-hornick-309343256_softwareengineering-gamedevelopment-learningbybuilding-activity-7416599540419506176-MSXP?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD8N3fkBvHqBlWCNW5YA8j5z7WDo0LPvghE" target="_blank">
+        <a class="project-card section">
             <section class="inner">
                 <h3>Gym Simulator</h3>
                 <h3>Personal Project</h3>
@@ -190,7 +189,7 @@ then open the box to place the item in their gym. The item shop also houses hiri
         // Full theme toggle with background and accent colors
         (function(){
             const themes = [
-                { name: 'Gray', bg: '#111111', accent: '#333333' },
+                { name: 'Gray', bg: '#111111', accent: '#999999' },
                 { name: 'Purple', bg: '#1a0f2e', accent: '#c084fc' },
                 { name: 'Emerald', bg: '#0f2e1e', accent: '#10b981' },
                 { name: 'Amber', bg: '#2d1f0f', accent: '#f59e0b' },
